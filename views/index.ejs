@@ -2,10 +2,16 @@
 <html>
   <head>
     <title>CHINGU - Join A Cohort Today!</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- browsers cannot understand scss so you must link the style.min.css file here and make all changes to the style.scss file, make sure you have a sass compiler in your text editor to compile your code into css in the style.min.css file -->
+    <link rel='stylesheet' href='/stylesheets/style.min.css' />
+    <link rel="stylesheet" href="/materialize-src/sass/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <h1>CHINGU</h1>
-    <p>FCC Cohorts</p>
+    <h1 class="center-align">CHINGU</h1>
+    <p class="center-align">FCC Cohorts</p>
   </body>
+  <!-- This includes jQuery and materialize JS in our page, must include jQuery before materialize so it loads properly  -->
+  <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+  <script src="/materialize-src/js/bin/materialize.min.js"></script>
 </html>
