@@ -1,9 +1,12 @@
 $bg-color1: #F6F7EB;
 $bg-color2: #3F88C5;
-
+$primary-color1: #44BBA4;
+$primary-color2: #E94F37;
+$accent-color: #393E41;
 
 body {
     font-size: 14px;
+    background-color: $bg-color1;
 }
 a {
     color: #00B7FF;
