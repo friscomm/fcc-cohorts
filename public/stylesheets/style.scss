@@ -72,7 +72,7 @@ p {
   padding-bottom: 2em;
 }
 
-.aboutSection .row{
+.row{
     margin-bottom: 0;
 }
 
@@ -86,6 +86,7 @@ p {
   margin-bottom: 2em;
   overflow: auto;
   border-radius: 3em;
+  padding: 1em;
 }
 
 .cohort img{
@@ -96,12 +97,13 @@ p {
 
 .cohortLeft{
   float:left;
-
 }
 
 .cohortRight{
   float: right;
-
+  margin-right: 15%;
+  padding-top: 1em;
+  font-size: 1.4em;
 }
 
 h1 {
@@ -121,6 +123,6 @@ h2 {
   @extend .grey, .lighten-4;
 }
 
-.greenBackground{
+.greenBackground {
   @extend .teal, .accent-4;
 }
