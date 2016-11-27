@@ -27,19 +27,27 @@ p {
 .subtitle {
     font-style: italic;
     display: inline;
-    padding: 0.2em 1em 0.2em 1em;
-    margin-left: 5em;
+    padding: 0.2em 1em;
+    // margin-left: 8em;
+    // margin-right: 7.5em;
+    // margin-top: 3em;
+    // float: right;
+    z-index: 0;
+    position: absolute;
+    top: 2.5em;
+    left: 8.5em;
 }
 
 .badge {
     border-radius: 50%;
-    height: 4em;
-    width: 4em;
-    margin-bottom: -1em;
+    height: 4.6em;
+    width: 4.6em;
+    margin-bottom: -1.5em;
+    margin-top: 0.4em;
 }
 
 .badge span {
-    height: 4em;
+    height: 4.6em;
     display: inline-block;
     vertical-align: middle;
 }
@@ -48,12 +56,14 @@ p {
     display: inline-block;
     vertical-align: middle;
 }
+
 .header-text {
-  color: $primary-white-1;
-  background-color: $primary-blue-1;
-  font-size: 1.1em;
-  margin: 2em 0 2em 0;
+    color: $primary-white-1;
+    background-color: $primary-blue-1;
+    font-size: 1.1em;
+    margin: 1em 0;
 }
+
 a {
     color: #00B7FF;
 }
