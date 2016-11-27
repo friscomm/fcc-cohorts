@@ -1,3 +1,7 @@
+@import '../materialize-src/sass/materialize.scss';
+
+
+
 $primary-white-1: #F5F5F5;
 $primary-blue-1: #0288D1;
 $primary-green-1: #00BFA5;
@@ -14,7 +18,6 @@ p {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    background-color: $primary-white-1;
 }
 
 .badge,
@@ -64,6 +67,11 @@ p {
     margin: 1em 0;
 }
 
+.aboutSection h2{
+  font-size: 3em;
+  padding: 1em;
+}
+
 a {
     color: #00B7FF;
 }
@@ -75,3 +83,11 @@ h1 {
 h2 {
     font-size: 1.4em;
 }
+
+.blueBackground {
+    @extend .light-blue, .darken-2;
+  }
+
+  .whiteBackground {
+      @extend .grey, .lighten-4;
+    }
