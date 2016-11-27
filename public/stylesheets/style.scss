@@ -2,11 +2,11 @@
 
 
 
-$primary-white-1: #F5F5F5;
-$primary-blue-1: #0288D1;
-$primary-green-1: #00BFA5;
-$primary-red-1: #E94F37;
-$primary-black-1: #393E41;
+$primary-white: #F5F5F5;
+$primary-blue: #0288d1;
+$primary-teal: #00bfa5;
+$primary-red: #e64a19;
+$primary-black: #424242;
 
 a,
 body,
@@ -22,8 +22,8 @@ p {
 
 .badge,
 .subtitle {
-    color: $primary-white-1;
-    background-color: $primary-green-1;
+    color: $primary-white;
+    background-color: $primary-teal;
     text-align: center;
 }
 
@@ -31,10 +31,6 @@ p {
     font-style: italic;
     display: inline;
     padding: 0.2em 1em;
-    // margin-left: 8em;
-    // margin-right: 7.5em;
-    // margin-top: 3em;
-    // float: right;
     z-index: 0;
     position: absolute;
     top: 2.5em;
@@ -61,8 +57,8 @@ p {
 }
 
 .header-text {
-    color: $primary-white-1;
-    background-color: $primary-blue-1;
+    color: $primary-white;
+    background-color: $primary-blue;
     font-size: 1.1em;
     margin: 1em 0;
 }
@@ -72,8 +68,40 @@ p {
   padding: 1em;
 }
 
-a {
-    color: #00B7FF;
+.aboutSection .aboutText{
+  padding-bottom: 2em;
+}
+
+.aboutSection .row{
+    margin-bottom: 0;
+}
+
+.cohortSection h2{
+  font-size: 3em;
+  padding: 1em;
+}
+
+.cohort{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  overflow: auto;
+  border-radius: 3em;
+}
+
+.cohort img{
+  width: 10em;
+  border-radius: 10em;
+  border: 1px solid $primary-white;
+}
+
+.cohortLeft{
+  float:left;
+
+}
+
+.cohortRight{
+  float: right;
+
 }
 
 h1 {
@@ -85,9 +113,14 @@ h2 {
 }
 
 .blueBackground {
-    @extend .light-blue, .darken-2;
-  }
+  @extend .light-blue, .darken-2;
+  color: $primary-white;
+}
 
-  .whiteBackground {
-      @extend .grey, .lighten-4;
-    }
+.whiteBackground {
+  @extend .grey, .lighten-4;
+}
+
+.greenBackground{
+  @extend .teal, .accent-4;
+}
