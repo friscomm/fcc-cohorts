@@ -1,11 +1,161 @@
-$bg-color1: #F6F7EB;
-$bg-color2: #3F88C5;
-body {
-    font-size: 14px;
+@import '../materialize-src/sass/materialize.scss';
+/* materialize is imported here so we can extend the presets, see the bottom of the page for an example of that */
+
+
+$primary-white: #F5F5F5;
+$primary-blue: #0288d1;
+$primary-teal: #00bfa5;
+$primary-red: #e64a19;
+$primary-black: #424242;
+
+
+/* These mixins are for CSS breakpoints, to make our website look good at all sizes and be responsive, a mixin is essentially a variable in CSS, so we dont have to type this stuff over and over, we can just reference the mixin name  */
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
 }
-a {
-    color: #00B7FF;
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
 }
+@mixin for-tablet-portait-only {
+  @media (min-width: 600px) and (max-width: 899px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-tablet-landscape-only {
+  @media (min-width: 900px) and (max-width: 1199px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-desktop-only {
+  @media (min-width: 1200px) and (max-width: 1799px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+a,
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
 h1 {
-    color: $bg-color2;
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+.badge,
+.subtitle {
+    color: $primary-white;
+    background-color: $primary-teal;
+    text-align: center;
+}
+
+.subtitle {
+    font-style: italic;
+    display: inline;
+    padding: 0.2em 1em;
+    z-index: 0;
+    position: absolute;
+    top: 2.5em;
+    left: 8.5em;
+}
+
+.badge {
+    border-radius: 50%;
+    height: 4.6em;
+    width: 4.6em;
+    margin-bottom: -1.5em;
+    margin-top: 0.4em;
+}
+
+.badge span {
+    height: 4.6em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.badge h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-text {
+    color: $primary-white;
+    background-color: $primary-blue;
+    font-size: 1.1em;
+    margin: 1em 0;
+}
+
+.aboutSection h2{
+  font-size: 3em;
+  padding: 1em;
+}
+
+.aboutSection .aboutText{
+  padding-bottom: 2em;
+}
+
+.row{
+    margin-bottom: 0;
+}
+
+.cohortSection h2{
+  font-size: 3em;
+  padding: 1em;
+}
+
+.cohort{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  overflow: auto;
+  border-radius: 3em;
+  padding: 1em;
+}
+
+.cohort img{
+  width: 8em;
+  border-radius: 10em;
+  border: 1px solid $primary-white;
+}
+
+.cohortLeft{
+  float:left;
+}
+
+.cohortRight{
+  float: right;
+  margin-right: 15%;
+  padding-top: 1em;
+  font-size: 1.6em;
+}
+
+.cohortName{
+  color: $primary-black;
+  font-size: 1.2em;
+}
+
+/* the classes below extend preset CSS that is included in materialize. extend is one of the things you can do with SCSS. if you do not understand this, please see the SCSS tutorial linked in our chat, lookup documentation, and ask :)   */
+.blueBackground {
+  @extend .light-blue, .darken-2;
+  color: $primary-white;
+}
+
+.whiteBackground {
+  @extend .grey, .lighten-4;
+}
+
+.greenBackground {
+  @extend .teal, .accent-4;
 }

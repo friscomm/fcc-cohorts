@@ -1,7 +1,7 @@
 # fcc-cohorts
-Informational website for joining FCC cohorts
+Informational website for joining Chingu cohorts
 
-This is our informational website for joining FCC cohorts. It will include info on each cohort, a button to join, an example of work completed by the cohorts, and some benefits of joining.
+This is our informational website for joining Chingu cohorts. It will include info on each cohort, a button to join, an example of work completed by the cohorts, and some benefits of joining.
 
 You will need to NodeJS installed on your computer to get this project running locally. You can do that at the link below.
 
