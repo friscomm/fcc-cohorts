@@ -9,7 +9,7 @@ $primary-red: #e64a19;
 $primary-black: #424242;
 
 
-/* These mixins are for CSS breakpoints, to make our website look good at all sizes and be responsive  */
+/* These mixins are for CSS breakpoints, to make our website look good at all sizes and be responsive, a mixin is essentially a variable in CSS, so we dont have to type this stuff over and over, we can just reference the mixin name  */
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
 }
