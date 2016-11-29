@@ -129,18 +129,25 @@ h2 {
     border-radius: 10em;
     border: 1px solid $primary-white;
     @include for-phone-only {
-        width: 5em;
+        display: block;
+        margin: auto;
     }
 }
 .cohortLeft {
     float: left;
-    @include for-phone-only {}
+    @include for-phone-only {
+      float: none;
+    }
 }
 .cohortRight {
     float: right;
     margin-right: 15%;
     padding-top: 1em;
     font-size: 1.6em;
+    @include for-phone-only {
+      float: none;
+      margin-right: 0;
+    }
 }
 .cohortName {
     color: $primary-black;
