@@ -63,6 +63,9 @@ h1 {
 h2 {
     font-size: 1.4em;
 }
+.row {
+    margin-bottom: 0;
+}
 .badge,
 .subtitle {
     color: $primary-white;
@@ -106,10 +109,9 @@ h2 {
 }
 .aboutSection .aboutText {
     padding-bottom: 2em;
+    font-size: 1.2em;
 }
-.row {
-    margin-bottom: 0;
-}
+
 .cohortSection h2 {
     font-size: 3em;
     padding: 1em;
@@ -123,6 +125,10 @@ h2 {
     @include for-phone-only {
         display: block;
     }
+    @include for-tablet-portrait-up {
+        display: block;
+    }
+
 }
 .cohort img {
     width: 8em;
@@ -131,23 +137,43 @@ h2 {
     @include for-phone-only {
         display: block;
         margin: auto;
+        width: 7em;
+    }
+    @include for-tablet-portrait-up {
+        display: block;
+        margin: auto;
     }
 }
 .cohortLeft {
     float: left;
     @include for-phone-only {
-      float: none;
+      float: left;
+    }
+    @include for-tablet-portrait-up {
+      float: left;
     }
 }
 .cohortRight {
     float: right;
-    margin-right: 15%;
     padding-top: 1em;
     font-size: 1.6em;
     @include for-phone-only {
-      float: none;
-      margin-right: 0;
+      float: right;
+      font-size: 1.3em;
     }
+    @include for-tablet-portrait-up {
+      float: right;
+    }
+}
+
+.cohortRight p{
+  @include for-phone-only {
+      text-align: center;
+  }
+  @include for-tablet-portrait-up {
+      text-align: center;
+  }
+
 }
 .cohortName {
     color: $primary-black;
