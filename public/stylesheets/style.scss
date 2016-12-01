@@ -7,7 +7,7 @@ $primary-red: #e64a19;
 $primary-black: #424242;
 /* These mixins are for CSS breakpoints, to make our website look good at all sizes and be responsive, a mixin is essentially a variable in CSS, so we dont have to type this stuff over and over, we can just reference the mixin name  */
 @mixin for-phone-only {
-     @media (max-width: 599px){
+     @media (max-width: 600px){
         @content;
     }
 }
@@ -60,11 +60,29 @@ p {
 }
 
 h1 {
-    font-size: 2.8em;
+    // font-size: 2.8em;
+    @include for-phone-only {
+        font-size: 2.2em;
+    }
+    @include for-tablet-portrait-up {
+      font-size: 2.5em;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 2.8em;
+    }
 }
 
 h2 {
-    font-size: 1.4em;
+    // font-size: 1.4em;
+    @include for-phone-only {
+        font-size: 1.1em;
+    }
+    @include for-tablet-portrait-up {
+      font-size: 1.2em;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 1.4em;
+    }
 }
 
 .row {
@@ -110,12 +128,12 @@ h2 {
 .header-nav {
     color: $primary-white;
     background-color: $primary-blue;
-    font-size: 1.1em;
+    // font-size: 1.1em;
     @include for-phone-only {
         display: none;
     }
     @include for-tablet-landscape-up {
-      margin-top: 4em;
+        margin-top: 4em;
     }
 }
 
@@ -131,9 +149,11 @@ h2 {
 
 .header-nav ul li {
     @include for-tablet-portrait-up {
+      font-size: 0.8em;
         margin: 0.5em 0;
     }
     @include for-tablet-landscape-up {
+      font-size: 1.1em;
         margin: 0 0.5em;
     }
 }
