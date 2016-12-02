@@ -157,6 +157,15 @@ h2 {
         margin: 0 0.5em;
     }
 }
+.main-image {
+  background-image: url('/images/main.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.join-button {
+  margin-top: 220px;
+}
 
 .aboutSection h2 {
     font-size: 3em;
