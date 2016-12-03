@@ -60,30 +60,29 @@ p {
 }
 
 h1 {
-    // font-size: 2.8em;
-    @include for-phone-only {
-        font-size: 2.2em;
-    }
-    @include for-tablet-portrait-up {
-      font-size: 2.5em;
-    }
-    @include for-tablet-landscape-up {
-      font-size: 2.8em;
-    }
+	@include for-phone-only {
+		font-size: 2.2em;
+	}
+	@include for-tablet-portrait-up {
+		font-size: 2.5em;
+	}
+	@include for-tablet-landscape-up {	
+		font-size: 2.8em;
+	}
 }
 
 h2 {
-    // font-size: 1.4em;
-    @include for-phone-only {
-        font-size: 1.1em;
-    }
-    @include for-tablet-portrait-up {
-      font-size: 1.2em;
-    }
-    @include for-tablet-landscape-up {
-      font-size: 1.4em;
-    }
+	@include for-phone-only {
+		font-size: 1.1em;
+	}
+	@include for-tablet-portrait-up {
+		font-size: 1.2em;
+	}
+	@include for-tablet-landscape-up {	
+		font-size: 1.4em;
+	}
 }
+
 
 .row {
     margin-bottom: 0;
@@ -137,6 +136,12 @@ h2 {
     }
 }
 
+.header-text {
+	font-weight: 900;
+	font-size: 150%;
+	text-align :center;
+}
+
 .header-nav ul {
     float: right;
     @include for-tablet-portrait-up {
@@ -156,6 +161,18 @@ h2 {
       font-size: 1.1em;
         margin: 0 0.5em;
     }
+}
+
+.introSection {
+	position: relative;
+}
+
+.introSection {
+	img {
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
 }
 
 .aboutSection h2 {
