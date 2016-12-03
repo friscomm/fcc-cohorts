@@ -190,6 +190,8 @@ h2 {
     padding: 1em;
     @include for-phone-only {
         display: block;
+        margin-bottom: 1em;
+        margin-top: 1em;
     }
     @include for-tablet-portrait-up {
         display: block;
