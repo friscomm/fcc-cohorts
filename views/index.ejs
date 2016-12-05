@@ -2,17 +2,20 @@
 <html>
 
 <head>
+	<meta charset="utf-8">
     <title>CHINGU - Join A Cohort Today!</title>
     <!-- browsers cannot understand scss so you must link the style.min.css file here and make all changes to the style.scss file, make sure you have a sass compiler in your text editor to compile your code into css in the style.min.css file -->
-    <link rel="stylesheet" href="/materialize-src/sass/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.min.css' />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- mobile friendly -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body>
-    <div>
+    <div class="row light-blue darken-2 header">
         <div class="row light-blue darken-2">
-            <div class="col s12 m6">
+            <div class="col s12 m8 l6 ">
                 <h2 class="subtitle">FCC Cohort Generator FTW</h2>
                 <h1 class="badge"><span></span>CHINGU</h1>
             </div>
@@ -34,130 +37,259 @@
             </div>
         </div>
     </div>
+
+	<div class="row main-image blueBackground">
+		<div class="col s12">
+			<div class="card">
+				<div class="card-image">
+					<img src="images/main_image.jpg">
+					<span class="card-title" id="join" ><a href="#joinID">
+						<button class="join-button waves-effect waves-light btn-large deep-orange darken-2">Join</button>
+					</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
     <!-- The homepage above should not be put into a container div -->
-    <div class="whiteBackground">
-        <div class='container aboutSection'>
+       <div class="whiteBackground">
+          <div class='container aboutSection'>
             <h2 class="center-align">About</h2>
-            <div class="row">
+              <div class="row">
                 <div class="col m6 s12 aboutText">
-                    Bacon ipsum dolor amet drumstick sausage chuck, turducken cupim bresaola landjaeger doner ground round sirloin pork chop pork belly meatball boudin. Venison pork belly brisket, tri-tip pork loin hamburger corned beef leberkas beef ribs pig shank pancetta
-                    tongue tenderloin andouille. Meatloaf beef t-bone spare ribs salami, pork chop shankle fatback. Frankfurter jerky drumstick ground round pancetta biltong. T-bone tongue swine venison. Short loin meatball venison, corned beef jerky
-                    burgdoggen ribeye capicola fatback andouille bacon jowl.
+                  Bacon ipsum dolor amet drumstick sausage chuck, turducken cupim bresaola landjaeger doner ground round sirloin pork chop pork belly meatball boudin. Venison pork belly brisket, tri-tip pork loin hamburger corned beef leberkas beef ribs pig shank pancetta tongue tenderloin andouille. Meatloaf beef t-bone spare ribs salami, pork chop shankle fatback. Frankfurter jerky drumstick ground round pancetta biltong. T-bone tongue swine venison. Short loin meatball venison, corned beef jerky burgdoggen ribeye capicola fatback andouille bacon jowl.
                 </div>
                 <div class="col m6 s12 aboutText">
-                    Capicola turducken venison picanha. Beef spare ribs ribeye hamburger burgdoggen, swine meatloaf salami. Biltong venison shankle burgdoggen flank sausage leberkas. Pork chop leberkas shankle beef ribs pork belly tail corned beef. Porchetta swine boudin
-                    chicken sausage short ribs kielbasa tri-tip leberkas spare ribs pastrami. Rump pancetta filet mignon shoulder doner tail cow turkey hamburger jowl alcatra ball tip fatback biltong. Filet mignon tail pancetta, beef shoulder turducken
-                    pork loin shankle leberkas flank bacon short loin brisket.
+                  Capicola turducken venison picanha. Beef spare ribs ribeye hamburger burgdoggen, swine meatloaf salami. Biltong venison shankle burgdoggen flank sausage leberkas. Pork chop leberkas shankle beef ribs pork belly tail corned beef. Porchetta swine boudin chicken sausage short ribs kielbasa tri-tip leberkas spare ribs pastrami. Rump pancetta filet mignon shoulder doner tail cow turkey hamburger jowl alcatra ball tip fatback biltong. Filet mignon tail pancetta, beef shoulder turducken pork loin shankle leberkas flank bacon short loin brisket.
                 </div>
+              </div>
+          </div>
+       </div>
+       <div class="blueBackground">
+         <div class="container cohortSection">
+           <h2 class="center-align">Cohorts</h2>
+           <div class="row">
+              <div class="col s12 m6">
+                <div class="cohort greenBackground">
+                  <div class="cohortLeft">
+                    <img src="/images/kangaroo.jpg"></img>
+                    <p class="center-align cohortName">
+                      KANGAROOS
+                    </p>
+                  </div>
+                  <div class="cohortRight">
+                    <p>Front-End Section</p>
+                    <p>Effort: Part-time</p>
+                    <p>Space: 23/30</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="cohort greenBackground">
+                  <div class="cohortLeft">
+                    <img src="/images/fox.jpg"></img>
+                    <p class="center-align cohortName">
+                      FOXES
+                    </p>
+                  </div>
+                  <div class="cohortRight">
+                    <p>Front-End Section</p>
+                    <p>Effort: Part-time</p>
+                    <p>Space: 23/30</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6 offset-m3">
+                <div class="cohort greenBackground">
+                  <div class="cohortLeft">
+                    <img src="/images/rhino.jpg"></img>
+                    <p class="center-align cohortName">
+                      RHINOS
+                    </p>
+                  </div>
+                  <div class="cohortRight">
+                    <p>Front-End Section</p>
+                    <p>Effort: Part-time</p>
+                    <p>Space: 23/30</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="cohort greenBackground">
+                  <div class="cohortLeft">
+                    <img src="/images/raccoon.jpg"></img>
+                    <p class="center-align cohortName">
+                      RACCOONS
+                    </p>
+                  </div>
+                  <div class="cohortRight">
+                    <p>Front-End Section</p>
+                    <p>Effort: Part-time</p>
+                    <p>Space: 23/30</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="cohort greenBackground">
+                  <div class="cohortLeft">
+                    <img src="/images/red-panda2.jpg"></img>
+                    <p class="center-align cohortName">
+                      RED PANDAS
+                    </p>
+                  </div>
+                  <div class="cohortRight">
+                    <p>Front-End Section</p>
+                    <p>Effort: Part-time</p>
+                    <p>Space: 23/30</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+              <div class="cohort greenBackground">
+                <div class="cohortLeft">
+                  <img src="/images/arctic-fox.jpg"></img>
+                  <p class="center-align cohortName">
+                    ARCTIC FOXES
+                  </p>
+                </div>
+                <div class="cohortRight">
+                  <p>Front-End Section</p>
+                  <p>Effort: Part-time</p>
+                  <p>Space: 23/30</p>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="blueBackground">
-        <div class="container cohortSection">
-            <h2 class="center-align">Cohorts</h2>
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="cohort greenBackground">
-                        <div class="cohortLeft">
-                            <img src="/images/kangaroo.jpg"></img>
-                            <p class="center-align cohortName">
-                                KANGAROOS
-                            </p>
-                        </div>
-                        <div class="cohortRight">
-                            <p>Front-End Section</p>
-                            <p>Effort: Part-time</p>
-                            <p>Space: 23/30</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="cohort greenBackground">
-                        <div class="cohortLeft">
-                            <img src="/images/rhino.jpg"></img>
-                            <p class="center-align cohortName">
-                                RHINOS
-                            </p>
-                        </div>
-                        <div class="cohortRight">
-                            <p>Front-End Section</p>
-                            <p>Effort: Part-time</p>
-                            <p>Space: 23/30</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="cohort greenBackground">
-                        <div class="cohortLeft">
-                            <img src="/images/raccoon.jpg"></img>
-                            <p class="center-align cohortName">
-                                RACCOONS
-                            </p>
-                        </div>
-                        <div class="cohortRight">
-                            <p>Front-End Section</p>
-                            <p>Effort: Part-time</p>
-                            <p>Space: 23/30</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="cohort greenBackground">
-                        <div class="cohortLeft">
-                            <img src="/images/red-panda2.jpg"></img>
-                            <p class="center-align cohortName">
-                                RED PANDAS
-                            </p>
-                        </div>
-                        <div class="cohortRight">
-                            <p>Front-End Section</p>
-                            <p>Effort: Part-time</p>
-                            <p>Space: 23/30</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="cohort greenBackground">
-                        <div class="cohortLeft">
-                            <img src="/images/arctic-fox.jpg"></img>
-                            <p class="center-align cohortName">
-                                ARCTIC FOXES
-                            </p>
-                        </div>
-                        <div class="cohortRight">
-                            <p>Front-End Section</p>
-                            <p>Effort: Part-time</p>
-                            <p>Space: 23/30</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="cohort greenBackground">
-                        <div class="cohortLeft">
-                            <img src="/images/cheetah.jpg"></img>
-                            <p class="center-align cohortName">
-                                CHEETAHS
-                            </p>
-                        </div>
-                        <div class="cohortRight">
-                            <p>Front-End Section</p>
-                            <p>Effort: Part-time</p>
-                            <p>Space: 23/30</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col s12 m6">
+            <div class="cohort greenBackground">
+              <div class="cohortLeft">
+                <img src="/images/cheetah.jpg"></img>
+                <p class="center-align cohortName">
+                  CHEETAHS
+                </p>
+              </div>
+              <div class="cohortRight">
+                <p>Front-End Section</p>
+                <p>Effort: Part-time</p>
+                <p>Space: 23/30</p>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="whiteBackground">
-        <div class="container benefitSection">
-            <h2 class="center-align">Why Join A Cohort?</h2>
+          </div>
+           </div>
+         </div>
+       </div>
+       <div class="row whiteBackground  aboutSection">
+			<div class="col s10 offset-s1 m8 offset-m2">
+            	<h2 class="center-align">Why Join A Cohort?</h2>
+				<p class="aboutText">Whether it is getting help with a code challenge or bringing people together to create a project they couldn’t create alone. As a member, you’ll have access to a network of people from all over the world who possess skills in dozens of different disciplines. It’s a Choose Your Own Adventure in terms of how Chingu can help you conquer your goals. We aim to motivate and inspire eachother to level-up and reach our goals.</p>
+				<p class="aboutText">Visit <a href="https://gitter.im/Weekly-Topics/What-is-React">weekly topic</a> where programmer talk.</p>  
+			</div> 
+       </div>
+		<div class="row greenBackground exampleSection">
+			<div class="col s12 l6">
+				<div class="card horizontal whiteBackground">
+					<div class="card-image">
+						<a href="http://codepen.io/trion/debug/bwraZp">
+							<img src="images/spaceshooter.png" class="responsive-img">
+						</a>
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<p>trion and kunal image-filter app during pair-programing trion and kunal image-filter app during pair-programing</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l6">
+				<div class="card horizontal whiteBackground">
+					<div class="card-image">
+						<a href="#"><img src="images/spaceshooter.png" class="responsive-img"></a>
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<p>Humans of FCC Story project</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l6">
+				<div class="card horizontal whiteBackground">
+					<div class="card-image">
+						<a href="https://trion129.github.io/Space-Shooter/">
+							<img src="images/spaceshooter.png" class="responsive-img">
+						</a>
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<p>Rhinos space shooter game </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l6">
+				<div class="card horizontal whiteBackground">
+					<div class="card-image">
+						<a href="https://medium.com/@trion/some-programming-challenges-when-you-are-bored-70b1ec1f07be#.grn5tiv8a">
+							<img src="images/spaceshooter.png" class="responsive-img">
+						</a>
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<p>@trion written programming challenges when you are bored</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l6">
+				<div class="card horizontal whiteBackground">
+					<div class="card-image">
+						<a href="https://medium.com/@chiptus/javascript-calculator-or-how-i-try-to-learn-ee0d6e815331#.gza95jxrc ">
+							<img src="images/spaceshooter.png" class="responsive-img">
+						</a>
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<p>@chiptus written article about </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        </div>
-    </div>
-    <div class="blueBackground exampleSection">
+		<div id="joinID" class="row joinSection">
+			<form class="col s6 offset-s3">
+				<div class="row">
+					<h2 class="center-align">How To Join A Cohort?</h2>
+					<p>Send me an e-mail with the name of the cohort you'd like to join and I'll send you an invite to the slack group. </p>
+				</div>
+      			<div class="row">
+        			<div class="input-field col s12">
+          				<input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          				<label for="first_name">First Name</label>
+        			</div>
+      			</div>
+				<div class="row">
+        			<div class="input-field col s12">
+          				<input placeholder="Cohort" id="cohort_name" type="text" class="validate">
+          				<label for="cohort_name">Cohort Name</label>
+        			</div>
+      			</div>
+		  		<div class="row">
+        			<div class="input-field col s12">
+          				<input id="email" type="email" class="validate">
+          				<label for="email">Email</label>
+        			</div>
+      			</div>
+			</form>
+  		</div>
+        
+		<footer class="row">
+			<div class="col s6 offset-s3">
+				<p class="center-align">Contact</p>
+				<p class="center-align">chinguftw@gmail.com</p>
+				<p class="center-align">Copyright &copy;&nbsp;&nbsp; CHINGU 2016</p>
+			</div>
+		</footer>
 
-    </div>
+	 </div>
 
 </body>
 <!-- This includes jQuery and materialize JS in our page, must include jQuery before materialize so it loads properly  -->

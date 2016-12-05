@@ -5,6 +5,7 @@ $primary-blue: #0288d1;
 $primary-teal: #00bfa5;
 $primary-red: #e64a19;
 $primary-black: #424242;
+$footer-blue: #1B3B55;
 /* These mixins are for CSS breakpoints, to make our website look good at all sizes and be responsive, a mixin is essentially a variable in CSS, so we dont have to type this stuff over and over, we can just reference the mixin name  */
 @mixin for-phone-only {
      @media (max-width: 600px){
@@ -59,31 +60,49 @@ p {
     font-size: 100%;
 }
 
+
 h1 {
-    // font-size: 2.8em;
-    @include for-phone-only {
-        font-size: 2.2em;
-    }
-    @include for-tablet-portrait-up {
-      font-size: 2.5em;
-    }
-    @include for-tablet-landscape-up {
-      font-size: 2.8em;
-    }
+	@include for-phone-only {
+		font-size: 2.2em;
+	}
+	@include for-tablet-portrait-up {
+		font-size: 2.5em;
+	}
+	@include for-tablet-landscape-up {	
+		font-size: 2.8em;
+	}
 }
 
 h2 {
-    // font-size: 1.4em;
-    @include for-phone-only {
-        font-size: 1.1em;
-    }
-    @include for-tablet-portrait-up {
-      font-size: 1.2em;
-    }
-    @include for-tablet-landscape-up {
-      font-size: 1.4em;
-    }
+	@include for-phone-only {
+		font-size: 2.6em;
+		padding: 1em 0;
+	}
+	@include for-tablet-portrait-up {
+		font-size: 2.8em;
+		padding: 1em 0;
+	}
+	@include for-tablet-landscape-up {	
+		font-size: 3em;
+		padding: 1em 0;
+	}
 }
+
+.header h2 {
+	@include for-phone-only {
+		font-size: 1.1em;
+		padding: 0;
+	}
+	@include for-tablet-portrait-up {
+		font-size: 1.2em;
+		padding: 0;
+	}
+	@include for-tablet-landscape-up {	
+		font-size: 1.4em;
+		padding: 0;
+	}
+}
+
 
 .row {
     margin-bottom: 0;
@@ -137,6 +156,12 @@ h2 {
     }
 }
 
+.header-text {
+	font-weight: 900;
+	font-size: 150%;
+	text-align :center;
+}
+
 .header-nav ul {
     float: right;
     @include for-tablet-portrait-up {
@@ -157,29 +182,21 @@ h2 {
         margin: 0 0.5em;
     }
 }
-.main-image {
-  background-image: url('/images/main.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-}
-.join-button {
-  margin-top: 220px;
+
+#join {
+	bottom: 50%;
+	left: 50%;
+	-webkit-transform: translate( -50%, 50% );
+	-moz-transform: translate( -50%, 50% );
+	-ms-transform: translate( -50%, 50% );
+	-o-transform: translate( -50%, 50% );
+	transform: translate( -50%, 50% );
 }
 
-.aboutSection h2 {
-    font-size: 3em;
-    padding: 1em;
-}
 
 .aboutSection .aboutText {
     padding-bottom: 2em;
     font-size: 1.2em;
-}
-
-.cohortSection h2 {
-    font-size: 3em;
-    padding: 1em;
 }
 
 .cohort {
@@ -190,8 +207,6 @@ h2 {
     padding: 1em;
     @include for-phone-only {
         display: block;
-        margin-bottom: 1em;
-        margin-top: 1em;
     }
     @include for-tablet-portrait-up {
         display: block;
@@ -249,6 +264,37 @@ h2 {
     color: $primary-black;
     font-size: 1.2em;
 }
+
+.exampleSection {
+	font-size: 1.2em;
+	padding : 1em 8.3%;
+}
+
+.exampleSection .card-image {
+	align-self: center;
+	padding: 12px;
+}
+
+.exampleSection img {
+	width: 150px;
+	height: 150px;
+}
+
+.joinSection {
+	font-size: 1.2em;
+}
+
+
+footer {
+	background: $footer-blue;
+	color: $primary-white;
+	padding: 2em 0 1em 0;
+}
+footer p {
+	font-size: 1.2em;
+	line-height: 2em;
+}
+
 /* the classes below extend preset CSS that is included in materialize. extend is one of the things you can do with SCSS. if you do not understand this, please see the SCSS tutorial linked in our chat, lookup documentation, and ask :)   */
 .blueBackground {
     @extend .light-blue, .darken-2;
