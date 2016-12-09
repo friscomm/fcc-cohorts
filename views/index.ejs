@@ -21,9 +21,9 @@
             </div>
             <div class="header-nav col m6">
                 <ul>
-                    <li><a class="waves-effect waves-light btn">About</a></li>
-                    <li><a class="waves-effect waves-light btn">Cohorts</a></li>
-                    <li><a class="waves-effect waves-light btn">Benefits</a></li>
+                    <li><a class="waves-effect waves-light btn" href="#about">About</a></li>
+                    <li><a class="waves-effect waves-light btn" href="#cohorts">Cohorts</a></li>
+                    <li><a class="waves-effect waves-light btn" href="#benefits">Benefits</a></li>
                 </ul>
             </div>
         </div>
@@ -53,7 +53,7 @@
     <!-- The homepage above should not be put into a container div -->
        <div class="whiteBackground">
           <div class='container aboutSection'>
-            <h2 class="center-align">About</h2>
+            <h2 class="center-align" id="about">About</h2>
               <div class="row">
                 <div class="col m6 s12 aboutText">
                   Bacon ipsum dolor amet drumstick sausage chuck, turducken cupim bresaola landjaeger doner ground round sirloin pork chop pork belly meatball boudin. Venison pork belly brisket, tri-tip pork loin hamburger corned beef leberkas beef ribs pig shank pancetta tongue tenderloin andouille. Meatloaf beef t-bone spare ribs salami, pork chop shankle fatback. Frankfurter jerky drumstick ground round pancetta biltong. T-bone tongue swine venison. Short loin meatball venison, corned beef jerky burgdoggen ribeye capicola fatback andouille bacon jowl.
@@ -66,7 +66,7 @@
        </div>
        <div class="blueBackground">
          <div class="container cohortSection">
-           <h2 class="center-align">Cohorts</h2>
+           <h2 class="center-align" id="cohorts">Cohorts</h2>
            <div class="row">
               <div class="col s12 m6">
                 <div class="cohort greenBackground">
@@ -163,15 +163,15 @@
        </div>
        <div class="row greenBackground aboutSection">
 			<div class="col s10 offset-s1 m8 offset-m2">
-            	<h2 class="center-align">Why Join A Cohort?</h2>
+            	<h2 class="center-align" id="benefits">Why Join A Cohort?</h2>
 			</div>
 		</div>
 		<div class="row whiteBackground aboutSection">
 			<div class="container">
 			<div class="col">
 				<p class="aboutText">Whether it is getting help with a code challenge or bringing people together to create a project they couldn’t create alone. As a member, you’ll have access to a network of people from all over the world who possess skills in dozens of different disciplines. It’s a Choose Your Own Adventure in terms of how Chingu can help you conquer your goals. We aim to motivate and inspire eachother to level-up and reach our goals.</p>
-				<p class="aboutText">Visit <a href="https://gitter.im/Weekly-Topics/What-is-React">weekly topic</a> where programmer talk.</p>  
-			</div> 
+				<p class="aboutText">Visit <a href="https://gitter.im/Weekly-Topics/What-is-React">weekly topic</a> where programmer talk.</p>
+			</div>
 			</div>
        </div>
 		<div class="row whiteBackground exampleSection">
@@ -179,7 +179,7 @@
 					<div class="card whiteBackground">
 						<div class="card-stacked">
 							<div class="card-content">
-								<p>getting help with a code challenge 
+								<p>getting help with a code challenge
 As a member, you’ll have access to a network of people from all over the world who possess skills in dozens of different disciplines.</p>
 							</div>
 						</div>
@@ -216,7 +216,7 @@ As a member, you’ll have access to a network of people from all over the world
 								<img src="images/stories.jpg" class="responsive-img">
 							</a>
 						</div>
-						
+
 					</div>
 				<!-- </div> -->
 		</div>
@@ -253,17 +253,17 @@ As a member, you’ll have access to a network of people from all over the world
 <!--
 						<a href="mailto:someone@yoursite.com?subject=Cohort&body=body">
 							<button>Send</button>
-						</a>  
+						</a>
 -->
         			</div>
       			</div>
 
 
-        
-				
+
+
 			</form>
   		</div>
-        
+
 		<footer class="row">
 			<div class="col s6 offset-s3">
 				<p class="center-align">Contact</p>
@@ -278,5 +278,30 @@ As a member, you’ll have access to a network of people from all over the world
 <!-- This includes jQuery and materialize JS in our page, must include jQuery before materialize so it loads properly  -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="/materialize-src/js/bin/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </html>
